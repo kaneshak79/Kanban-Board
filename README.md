@@ -1,4 +1,5 @@
 KANBAN BOARD APPLICATION
+
 📌 Project Overview
 
 The Kanban Board Application is a modern, responsive task management system developed using React JS.
@@ -19,6 +20,7 @@ Persist task data using localStorage
 Deliver a responsive, modern UI using TailwindCSS
 
 ✨ Core Features
+
 1️⃣ Kanban Board Layout
 
 Three predefined workflow columns:
@@ -94,12 +96,19 @@ Data remains intact after page refresh
 No backend or external API required
 
 🛠 Technology Stack
+
 Category	Technology Used
+
 Frontend	React JS
+
 Styling	TailwindCSS
+
 State Management	Context API
+
 Drag & Drop	dnd-kit
+
 Persistence	localStorage
+
 Build Tool	Vite
 
 
