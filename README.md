@@ -1,19 +1,26 @@
-Kanban Board – Task Management Application
+Kanban Board Application
+Overview
 
-A Kanban-style task management application built using React JS that allows users to create, organize, and move tasks across different workflow stages using drag-and-drop. The application uses Context API for global state management and localStorage for data persistence.
+The Kanban Board Application is a modern, responsive task management system developed using React JS. It enables users to efficiently manage tasks across different workflow stages using a visual board interface. The application emphasizes clean architecture, intuitive user experience, and reliable state management with persistent storage.
 
-Live Demo
+Objectives
 
-Deployed URL: https://kanban-board-dun-five.vercel.app/
+Implement a Kanban-style workflow using React
 
-Source Code
+Provide intuitive task creation, editing, and deletion
 
-GitHub Repository: (Add GitHub repo link here)
+Enable smooth drag-and-drop task movement between columns
 
-Features
-Task Board Layout
+Maintain global application state using Context API
 
-Three task columns:
+Persist task data locally to prevent data loss
+
+Deliver a responsive, production-quality user interface
+
+Key Features
+1. Kanban Workflow Board
+
+Predefined workflow stages:
 
 To Do
 
@@ -21,97 +28,95 @@ In Progress
 
 Done
 
-Each column displays task cards with:
+Tasks are visually grouped by status
+
+Responsive multi-column layout using TailwindCSS
+
+2. Task Management
+
+Create tasks with:
 
 Title
 
 Description
 
+Priority (High / Medium / Low)
+
+Tags
+
+Edit task details via a modal interface
+
+Delete tasks when no longer required
+
+3. Drag and Drop Functionality
+
+Implemented using dnd-kit
+
+Move tasks between columns effortlessly
+
+Reordering updates application state in real time
+
+Visual drag overlay for enhanced user feedback
+
+4. State Management
+
+Centralized global state using React Context API
+
+Clean separation of logic and UI components
+
+Scalable architecture suitable for future feature expansion
+
+5. Local Data Persistence
+
+Task data stored in localStorage
+
+Tasks persist across browser refreshes and sessions
+
+No external APIs or databases required
+
+6. Task Detail Modal
+
+Click on any task to open a detailed view
+
+Inline editing of:
+
+Title
+
+Description
+
+Status
+
 Priority
 
 Tags
 
-Fully responsive layout using TailwindCSS
+Professional modal UI with background blur and focus overlay
 
-Task Management
+Technology Stack
+Category	Technology
+Frontend	React JS
+Styling	TailwindCSS
+State Management	Context API
+Drag & Drop	dnd-kit
+Persistence	localStorage
+Build Tool	Vite
 
-Add new tasks using an input form
-
-Edit existing tasks through a modal interface
-
-Delete tasks when no longer needed
-
-Update task status manually or via drag-and-drop
-
-Drag and Drop
-
-Smooth drag-and-drop functionality implemented using dnd-kit
-
-Move tasks between columns
-
-Reorder tasks within a column
-
-Visual feedback during dragging
-
-State Management & Persistence
-
-Global state managed using React Context API
-
-Tasks automatically saved to localStorage
-
-Data persists after page refresh or browser reload
-
-Task Modal
-
-Click on a task card to view detailed information
-
-Edit task title, description, priority, and tags
-
-Modern modal UI with full-screen background overlay
-
-Tech Stack
-
-React JS
-
-TailwindCSS
-
-Context API
-
-dnd-kit (Drag & Drop)
-
-localStorage
-
-Vite (Build Tool)
-
-Project Structure
-src/
-│
-├── components/
-│   ├── AddTaskForm.jsx
-│   ├── Column.jsx
-│   ├── TaskCard.jsx
-│   ├── SortableTaskCard.jsx
-│   ├── TaskModal.jsx
-│   └── Navbar.jsx
-│
-├── context/
-│   └── TaskContext.jsx
-│
-├── pages/
-│   └── Home.jsx
-│
-├── App.jsx
-├── main.jsx
-├── index.css
 
 Installation & Setup
+Prerequisites
+
+Node.js (v16 or higher)
+
+npm or yarn
+
+Steps
 
 Clone the repository:
 
-git clone <your-repo-url>
+git clone <repository-url>
 
 
-Navigate to the project folder:
+Navigate to the project directory:
 
 cd kanban-board
 
@@ -121,21 +126,34 @@ Install dependencies:
 npm install
 
 
-Run the development server:
+Start the development server:
 
 npm run dev
+
+Deployment
+
+The application can be deployed using Netlify or Vercel
+
+Production build command:
+
+npm run build
+
 
 Future Enhancements
 
 Task deadlines and reminders
 
+User authentication
+
 Search and filter functionality
 
-Dark mode
+Column customization
 
-Column reordering
+Dark mode support
 
 Author
 
 Kanesha
 
+
+This project demonstrates strong proficiency in React JS, modern UI development, state management, and interactive UX design. It follows best practices in component architecture and is suitable for real-world task management use cases.
